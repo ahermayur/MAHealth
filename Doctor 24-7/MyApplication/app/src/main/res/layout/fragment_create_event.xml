@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.mayur.doctor24_7.fragment.CreateEvent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Event Title"
+                android:id="@+id/et_event_title"
+                android:maxLines="2"
+                android:layout_margin="5dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Event Address"
+                android:maxLines="2"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/et_event_title"
+                android:id="@+id/et_event_address"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_below="@+id/et_event_address"
+                android:layout_width="match_parent"
+                android:id="@+id/lay_startdate"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="#000"
+
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:entries="@array/day"
+                    android:id="@+id/sp_start_day"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:entries="@array/month"
+                    android:id="@+id/sp_start_month"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:entries="@array/year"
+                    android:id="@+id/sp_start_year"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:id="@+id/lay_enddate"
+                android:layout_below="@+id/lay_startdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End Date :"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="#000"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:entries="@array/day"
+                    android:id="@+id/sp_end_day"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:entries="@array/month"
+                    android:id="@+id/sp_end_month"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:entries="@array/year"
+                    android:id="@+id/sp_end_year"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Event Description"
+                android:minLines="4"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/lay_enddate"
+                android:id="@+id/et_event_description"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_height="wrap_content" />
+            <Button
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="#FFF44538"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/et_event_description"
+                android:text="Create Event"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_event_create" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

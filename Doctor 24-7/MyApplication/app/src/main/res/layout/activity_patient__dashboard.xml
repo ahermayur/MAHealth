@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_doctor_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+    tools:context="com.example.mayur.doctor24_7.Patient_Dashboard">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <LinearLayout
+                android:layout_gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/icon"
+
+                    />
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/app_name"
+                    android:gravity="center"
+                    android:id="@+id/title"
+                    android:textSize="30dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textColor="#ff99cc00" />
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/doctors"
+                    android:layout_height="200dp" />
+            </android.support.v7.widget.CardView>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_gravity="center"
+
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.CardView
+                            android:padding="5dp"
+
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="6dp"
+                            android:background="#ffcc9900">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:textColor="#FFF"
+                                android:drawableTop="@drawable/event50"
+                                android:gravity="center|center_horizontal"
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:text="Event"
+                                android:id="@+id/tv_menu_p_event"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/holo_green_light" />
+
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:padding="5dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="6dp"
+                            android:background="@android:color/holo_blue_bright">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:textColor="#FFF"
+                                android:drawableTop="@drawable/appointment"
+                                android:gravity="center|center_horizontal"
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:text="Appointment"
+                                android:layout_height="match_parent"
+                                android:background="#ff00ddff" />
+
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:padding="5dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="6dp"
+                            >
+                            <TextView
+                                android:padding="5dp"
+                                android:layout_width="match_parent"
+                                android:textColor="#FFF"
+                                android:id="@+id/tv_menu_p_bmi"
+                                android:drawableTop="@drawable/bmi"
+                                android:gravity="center|center_horizontal"
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:text="BMI"
+                                android:layout_height="match_parent"
+                                android:background="#ffff8800" />
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.CardView
+                            android:padding="5dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="6dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:textColor="#FFF"
+                                android:id="@+id/tv_p_searchdoc"
+                                android:drawableTop="@drawable/searchuser"
+                                android:gravity="center|center_horizontal"
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:text="Search Doctor"
+                                android:layout_height="match_parent"
+                                android:background="#ffaa66cc" />
+
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:padding="5dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="6dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:textColor="#FFF"
+                                android:id="@+id/tv_p_dia"
+                                android:drawableTop="@drawable/event50"
+                                android:gravity="center|center_horizontal"
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:text="Diabeties"
+                                android:layout_height="match_parent"
+                                android:background="#ffff4444" />
+
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:padding="5dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="6dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:textColor="#FFF"
+                                android:id="@+id/tv_p_cancer"
+                                android:drawableTop="@drawable/event50"
+                                android:gravity="center|center_horizontal"
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:text="Cancer"
+                                android:layout_height="match_parent"
+                                android:background="#aaaaaa" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>

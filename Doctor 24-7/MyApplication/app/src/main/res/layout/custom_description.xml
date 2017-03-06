@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="350dp"
+    android:id="@+id/linear"
+    android:gravity="center|clip_horizontal"
+    android:layout_height="400dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Event Title : "
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#ff00ddff"
+                    android:layout_height="wrap_content"
+                     />
+            <TextView
+                android:text="TextView"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:textColor="#ff00ddff"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_d_event_title" />
+                </LinearLayout>
+
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description : "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:layout_margin="5dp"
+                    android:id="@+id/tv_d_discription"
+                    android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address : "
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:id="@+id/tv_d_address"
+                    android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Start Date:"
+                    android:textColor="#0a0"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="23/02/2017"
+                    android:textColor="#000"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_d_event_startdate" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="End Date:"
+                    android:textColor="#a00"
+                    android:paddingRight="5dp"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:paddingLeft="5dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="23/02/2017"
+                    android:textColor="#000"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_d_event_enddate" />
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Ok"
+            android:layout_margin="3dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_event_ok" />
+        <Button
+            android:text="Register Event"
+            android:layout_margin="3dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_event_action" />
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>

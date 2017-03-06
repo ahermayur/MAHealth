@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context="com.example.mayur.doctor24_7.event_registered_patient">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        android:text="Event Registered Count"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:id="@+id/rcount"
+        android:textColor="#ff00ddff"
+        android:drawableLeft="@drawable/event50"
+        android:drawablePadding="5dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <HorizontalScrollView
+        android:id="@+id/scv_registered"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/screen_background_light_transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_reg_pid"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:gravity="center"
+                    android:text="ID"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_reg_pemail"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:gravity="center"
+                    android:text="Email"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_reg_pname"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_reg_pmob"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:gravity="center"
+                    android:text="Contact No"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_event_registred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light_transparent"></ListView>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

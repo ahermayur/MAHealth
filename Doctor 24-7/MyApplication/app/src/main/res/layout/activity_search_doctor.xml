@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg2"
+    android:layout_height="match_parent"
+    tools:context="com.example.mayur.doctor24_7.Patient.Search_Doctor"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_search_doc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_weight="6"
+            android:hint="Search Doctor" />
+
+        <ImageView
+            android:id="@+id/img_search_doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            app:layout_constraintLeft_toRightOf="@+id/editText"
+            app:srcCompat="@android:drawable/ic_search_category_default"
+            tools:layout_editor_absoluteY="16dp" />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/lv_search_doctor"
+        android:layout_height="match_parent" />
+</LinearLayout>

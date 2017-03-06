@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mayur.doctor24_7.Login"
+    android:background="@drawable/bg">
+
+    <ImageView
+        app:srcCompat="@drawable/icon"
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:text="@string/app_name"
+        android:layout_marginTop="112dp"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="true"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.CardView
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+
+        app:cardBackgroundColor="@android:color/darker_gray"
+        android:layout_marginTop="21dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHint="#FF383838"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:padding="5dp"
+                android:drawablePadding="5dp"
+                android:background="#FFE1E1E1"
+
+                android:layout_marginBottom="15dp"
+                android:id="@+id/et_username"
+                android:hint="Email" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHint="#FF383838"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:padding="5dp"
+                android:drawablePadding="5dp"
+                android:background="#FFE1E1E1"
+                android:inputType="textPassword"
+                android:hint="Password"
+
+                android:layout_marginBottom="15dp"
+                android:id="@+id/et_pass" />
+        </android.support.design.widget.TextInputLayout>
+            <RadioGroup
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Login As "
+                    android:paddingRight="5dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/radio_login_doctor"
+                    android:text="Doctor"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="Patient"
+                    android:id="@+id/radio_login_patient"
+                    android:checked="true"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Login"
+                android:layout_gravity="center"
+                android:textSize="28dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:background="#FFF44538"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/btn_login"
+                android:textColor="#FFFFFF" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Create Doctor Account"
+                    android:id="@+id/tv_createnewdoc"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#FFF"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/newdoctor"
+                    android:layout_gravity="right"
+                    android:paddingLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.22" />
+
+            <TextView
+                android:text="Create Patient Account"
+                android:id="@+id/tv_createnewacc"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_marginBottom="15dp"
+                android:textColor="#FFF"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/newuser"
+                android:layout_gravity="right"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.22"
+                android:drawableTint="@android:color/holo_blue_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

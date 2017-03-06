@@ -1,0 +1,174 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:layout_margin="9dp"
+            android:id="@+id/cv_med1"
+            >
+            <com.codesgood.views.JustifiedTextView
+                android:text="Heart and blood vessel disease"
+                android:textSize="20dp"
+                android:padding="3dp"
+                android:drawableRight="@drawable/down"
+                android:drawablePadding="20dp"
+                android:textColor="#ffaa66cc"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt1" />
+            <com.codesgood.views.JustifiedTextView
+                android:text=""
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt2" />
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="9dp"
+            android:id="@+id/cv_med2">
+            <com.codesgood.views.JustifiedTextView
+                android:text="Nerve damage (neuropathy)"
+                android:textColor="#ffaa66cc"
+                android:drawableRight="@drawable/down"
+                android:drawablePadding="20dp"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt3" />
+            <com.codesgood.views.JustifiedTextView
+                android:text=""
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt4" />
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="9dp"
+            android:id="@+id/cv_med3">
+            <com.codesgood.views.JustifiedTextView
+                android:text="Eye damage"
+                android:textSize="20dp"
+                android:drawableRight="@drawable/down"
+                android:drawablePadding="20dp"
+                android:textColor="#ffaa66cc"
+
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt5" />
+            <com.codesgood.views.JustifiedTextView
+                android:text=""
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt6" />
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="9dp"
+            android:id="@+id/cv_med4">
+            <com.codesgood.views.JustifiedTextView
+                android:text="Foot damage"
+                android:textColor="#ffaa66cc"
+                android:drawableRight="@drawable/down"
+                android:drawablePadding="20dp"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt7" />
+            <com.codesgood.views.JustifiedTextView
+                android:text=""
+                android:paddingLeft="10dp"
+
+                android:layout_width="wrap_content"
+
+
+                android:layout_height="wrap_content"
+                android:id="@+id/txt8" />
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="9dp"
+            android:id="@+id/cv_med5">
+            <com.codesgood.views.JustifiedTextView
+                android:textColor="#ffaa66cc"
+
+                android:text="Skin and mouth conditions"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:drawableRight="@drawable/down"
+                android:drawablePadding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt9" />
+            <com.codesgood.views.JustifiedTextView
+                android:text=""
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt10" />
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="9dp"
+            android:id="@+id/cv_med6">
+            <com.codesgood.views.JustifiedTextView
+                android:text="Pregnancy complications"
+                android:textSize="20dp"
+                android:textColor="#ffaa66cc"
+                android:paddingLeft="10dp"
+                android:drawableRight="@drawable/down"
+                android:drawablePadding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt11" />
+            <com.codesgood.views.JustifiedTextView
+                android:text=""
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt12" />
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
