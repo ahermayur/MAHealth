@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.mayur.doctor24_7.Doctor.frag_patient_info">
+
+    <android.support.v7.widget.CardView
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/textView"
+        app:cardBackgroundColor="@android:color/darker_gray"
+        android:layout_marginTop="21dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_info_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/user1"
+                        android:gravity="center_vertical"
+                        android:text="Name : "
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/holo_purple" />
+
+                    <TextView
+                        android:id="@+id/tv_info_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/mail"
+                        android:gravity="center_vertical"
+                        android:text="Mail : "
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/holo_purple" />
+
+                    <TextView
+                        android:id="@+id/tv_info_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/contact"
+                        android:gravity="center_vertical"
+                        android:text="Contact No : "
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/holo_purple" />
+
+                    <TextView
+                        android:id="@+id/tv_info_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/gender"
+                        android:gravity="center_vertical"
+                        android:text="Gender : "
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/holo_purple" />
+
+                    <TextView
+                        android:id="@+id/tv_info_blood"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/blood"
+                        android:gravity="center_vertical"
+                        android:text="Blood Group : "
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/holo_purple" />
+
+                    <TextView
+                        android:id="@+id/tv_info_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/calendar"
+                        android:gravity="center_vertical"
+                        android:text="DOB : "
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/holo_purple" />
+
+                    <TextView
+                        android:id="@+id/tv_info_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/address"
+                        android:gravity="center_vertical"
+                        android:text="Address : "
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/holo_purple" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
